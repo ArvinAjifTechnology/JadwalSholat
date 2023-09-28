@@ -18,10 +18,18 @@ module.exports = {
           {
             loader: "css-loader",
           },
-          {
-            loader: "url-loader",
-          },
         ],
+      },
+      {
+        test: /\.(ttf|eot|woff|woff2)$/,
+        use: {
+          loader: "url-loader",
+          options: {
+            limit: 8192, // Ukuran font yang lebih kecil akan di-embed sebagai data URL
+            name: "[name].[ext]",
+            outputPath: "fonts/",
+          },
+        },
       },
     ],
   },
