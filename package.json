@@ -1,0 +1,19 @@
+{
+  "name": "jadwalsholat",
+  "version": "1.0.0",
+  "description": "Aplikasi Untuk Mengetahui JadwalSholat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArvinAjifTechnology/JadwalSholat.git"
+  },
+  "author": "Arvin Muhammad Ajif",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArvinAjifTechnology/JadwalSholat/issues"
+  },
+  "homepage": "https://github.com/ArvinAjifTechnology/JadwalSholat#readme"
+}
