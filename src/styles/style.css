@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'MyFont';
+  src: url('../fonts/arabicRamadhan.ttf') format('ttf');
+}
+
 body {
   font-family: 'Quicksand', sans-serif;
   margin: 0;
@@ -68,7 +73,6 @@ h3 {
 
 #content {
   flex: 5;
-
   display: flex;
   flex-flow: column nowrap;
   gap: 1rem 2rem;
