@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pengenalan Laravel</title>
+    <link rel="stylesheet" href="./src/styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="jumbotron">
+        <h1>Jadwal Sholat</h1>
+        <p>Sholatlah Sebelum Di Sholatkan</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#cari-id-kota">Cari ID Kota</a></li>
+          <li><a href="#jadwal-sholat">Fitur</a></li>
+          <li><a href="#penggunaan">Penggunaan</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="content">
+        <article class="card" id="cari-id-kota">
+          <h2>Pengenalan</h2>
+          <p>
+            <input type="date" name="date" id="date" />
+            Laravel adalah kerangka kerja PHP yang populer untuk mengembangkan
+            aplikasi web. Dikembangkan dengan konsep MVC
+            (Model-View-Controller), Laravel menawarkan sintaks yang elegan dan
+            fitur yang kuat, memudahkan pengembang dalam membuat aplikasi dengan
+            efisien dan terstruktur.
+          </p>
+          <img
+            class="featured-image"
+            src="assets/image/introduction.png"
+            alt="Laravel Logo"
+          />
+        </article>
+        <article class="card" id="jadwal-sholat">
+          <h2>Fitur</h2>
+          <p>
+            Laravel dilengkapi dengan berbagai fitur yang membantu pengembang
+            dalam proses pengembangan aplikasi web. Beberapa fitur unggulan
+            termasuk sistem routing yang kuat, ORM (Object-Relational Mapping)
+            Eloquent, sistem templating Blade, dan integrasi dengan berbagai
+            layanan pihak ketiga.
+          </p>
+          <section>
+            <h3>ORM Eloquent</h3>
+            <p>
+              Eloquent adalah ORM yang terintegrasi dalam Laravel, memudahkan
+              pengembang dalam mengakses dan mengelola data dalam database
+              dengan sintaks yang ekspresif dan intuitif.
+            </p>
+            <img
+              class="featured-image"
+              src="assets/image/orm-eloquent.png"
+              alt="Laravel Logo"
+            />
+          </section>
+          <section>
+            <h3>Sistem Templating Blade</h3>
+            <p>
+              Blade adalah mesin templating yang dirancang khusus untuk Laravel.
+              Dengan sintaks yang sederhana dan ekspresif, Blade memungkinkan
+              pengembang untuk membuat tampilan yang dinamis dan mudah dikelola.
+            </p>
+            <img
+              class="featured-image"
+              src="assets/image/templating-blade.png"
+              alt="Laravel Logo"
+            />
+          </section>
+        </article>
+        <article class="card" id="penggunaan">
+          <h2>Penggunaan</h2>
+          <p>
+            Untuk menggunakan Laravel, Anda perlu menginstalnya menggunakan
+            Composer, manajer paket PHP. Setelah instalasi selesai, Anda dapat
+            mulai mengembangkan aplikasi dengan membuat rute, mengakses basis
+            data, dan merancang tampilan menggunakan Blade.
+          </p>
+          <section>
+            <h3>Instalasi dengan Composer</h3>
+            <p>
+              Buka terminal dan jalankan perintah berikut untuk menginstal
+              Laravel menggunakan Composer:
+            </p>
+            <pre><code>composer create-project laravel/laravel nama-proyek</code></pre>
+          </section>
+          <section>
+            <h3>Membuat Rute</h3>
+            <p>
+              Anda dapat mendefinisikan rute aplikasi di dalam file
+              <code>routes/web.php</code>. Rute menghubungkan URL dengan
+              tindakan (action) yang terkait dalam kontroler.
+            </p>
+          </section>
+        </article>
+      </div>
+      <aside>
+        <article class="card profile">
+          <header>
+            <h2>Laravel</h2>
+            <p>Framework PHP Modern</p>
+            <figure>
+              <img src="assets/image/laravel-logo.png" alt="Laravel Badge" />
+              <figcaption>Lambang</figcaption>
+            </figure>
+          </header>
+          <section>
+            <h3>Informasi Lainnya</h3>
+            <table>
+              <tr>
+                <th>Situs Resmi</th>
+                <td><a href="https://laravel.com">laravel.com</a></td>
+              </tr>
+              <tr>
+                <th>Terakhir Diperbarui</th>
+                <td>Agustus 2023</td>
+              </tr>
+              <tr>
+                <th>Versi Terbaru</th>
+                <td>10.0</td>
+              </tr>
+              <tr>
+                <th>GitHub</th>
+                <td>
+                  <a href="https://github.com/laravel/laravel"
+                    >github.com/laravel/laravel</a
+                  >
+                </td>
+              </tr>
+            </table>
+          </section>
+        </article>
+      </aside>
+    </main>
+    <footer>
+      <p>
+        Belajar Dasar Pemrograman Web &#169; 2023, Dicoding Academy By. Arvin
+        Muhammad Ajif
+      </p>
+    </footer>
+  </body>
+</html>
