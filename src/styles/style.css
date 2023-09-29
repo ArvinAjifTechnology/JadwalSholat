@@ -1,14 +1,43 @@
+@import url('font.css');
 * {
   box-sizing: border-box;
 }
 
 @font-face {
-  font-family: 'MyFont';
-  src: url('../fonts/arabicRamadhan.ttf') format('ttf');
+  font-family: 'Ketupat Ramadhan';
+  src: url('/src/fonts/ketupatRamadhan.ttf') format('ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Arabic Ramadhan';
+  src: url('/src/fonts/arabicRamadhan.ttf') format('ttf');
+  font-weight: 600;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: 'Sketsa Ramadhan';
+  src: url('/src/fonts/SketsaRamadhan.otf') format('otf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mozaik Ramadhan';
+  src: url('/src/fonts/MozaikRamadhan.otf') format('otf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+:root{
+  --primary-color:#618264;
+  --secondary-color : #79AC78;
+  --thirty-color:#0000;
+  --fouthy-color:#0000;
+}
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Mozaik Ramadhan';
   margin: 0;
   padding: 0;
 }
@@ -18,7 +47,7 @@ header {
 }
 
 nav {
-  background-color: #b60e24;
+  background-color: var(--primary-color);
   padding: 5px;
   position: sticky;
   top: 0;
@@ -35,7 +64,7 @@ nav li {
 }
 
 nav a {
-  font-size: 18px;
+  font-size: 29px;
   font-weight: 400;
   text-decoration: none;
 
@@ -79,13 +108,22 @@ h3 {
 }
 
 .jumbotron {
-  font-size: 20px;
   padding: 60px;
-  background-color: #d6152f;
+  background: linear-gradient(47deg, rgba(97,131,100,1) 0%, rgba(121,172,120,1) 33%, rgba(176,217,177,1) 81%, rgba(209,232,211,1) 100%);
   text-align: center;
   color: white;
 }
+.jumbotron h1{
+  font-family: 'Ketupat Ramadhan';
+  font-size: 99px;
+  margin-bottom: 0px;
+}
 
+.jumbotron p {
+  margin-top: 0px;
+  font-family: 'Arabic Ramadhan';
+  font-size: 69px;
+}
 .profile header {
   text-align: center;
 }
