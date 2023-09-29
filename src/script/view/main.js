@@ -11,6 +11,7 @@ const main = () => {
   const onButtonSearchClicked = async () => {
     try {
       const result = await DataSource.searchCityId(searchElement.value);
+      console.log(result);
       renderResult(result);
     } catch (message) {
       fallbackResult(message);
@@ -20,7 +21,6 @@ const main = () => {
   const renderResult = (results) => {
     cityListElement.cities = results;
   };
-
   const fallbackResult = (message) => {
     cityListElement.renderError(message);
   };

@@ -51,8 +51,8 @@ class CityIdItem extends HTMLElement {
   
   
             <div class="city-info">
-              <h2>${this._city.id}</h2>
-              <p>${this._city.lokasi}</p>
+              <h2>${this._city[0].id}</h2>
+              <p>${this._city[0].lokasi}</p>
             </div>`;
   }
 }
