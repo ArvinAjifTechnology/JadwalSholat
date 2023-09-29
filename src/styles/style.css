@@ -45,36 +45,6 @@ body {
 header {
   display: inline;
 }
-
-nav {
-  background-color: var(--primary-color);
-  padding: 5px;
-  position: sticky;
-  top: 0;
-}
-
-nav ul {
-    padding-inline: 4rem;
-    display: flex;
-    gap: 2rem;
-}
-
-nav li {
-  list-style-type: none;
-}
-
-nav a {
-  font-size: 29px;
-  font-weight: 400;
-  text-decoration: none;
-
-  color: white;
-}
-
-nav a:hover {
-  font-weight: bold;
-}
-
 main {
   padding: 20px;
 
@@ -105,24 +75,6 @@ h3 {
   display: flex;
   flex-flow: column nowrap;
   gap: 1rem 2rem;
-}
-
-.jumbotron {
-  padding: 60px;
-  background: linear-gradient(47deg, rgba(97,131,100,1) 0%, rgba(121,172,120,1) 33%, rgba(176,217,177,1) 81%, rgba(209,232,211,1) 100%);
-  text-align: center;
-  color: white;
-}
-.jumbotron h1{
-  font-family: 'Ketupat Ramadhan';
-  font-size: 99px;
-  margin-bottom: 0px;
-}
-
-.jumbotron p {
-  margin-top: 0px;
-  font-family: 'Arabic Ramadhan';
-  font-size: 69px;
 }
 .profile header {
   text-align: center;
@@ -155,10 +107,6 @@ h3 {
       }
 }
 @media screen and (max-width: 768px) {
-    nav ul {
-        justify-content: center;
-      }
-     
       main aside {
         align-self: stretch;
       }
