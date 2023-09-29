@@ -24,8 +24,8 @@
 }
 
 @font-face {
-  font-family: 'Mozaik Ramadhan';
-  src: url('/src/fonts/MozaikRamadhan.otf') format('otf');
+  font-family: 'a Awal Ramadhan';
+  src: url('/src/fonts/aAwalRamadhan.ttf') format('otf');
   font-weight: 600;
   font-style: normal;
 }
@@ -33,13 +33,14 @@
 :root{
   --primary-color:#618264;
   --secondary-color : #79AC78;
-  --thirty-color:#0000;
-  --fouthy-color:#0000;
+  --thirty-color:#B0D9B1;
+  --fouthy-color:#D0E7D2;
 }
 body {
-  font-family: 'Mozaik Ramadhan';
+  font-family: 'a Awal Ramadhan';
   margin: 0;
   padding: 0;
+  background-color: var(--thirty-color);
 }
 
 header {
@@ -59,7 +60,7 @@ aside {
 footer {
   padding: 20px;
   color: #fff;
-  background-color: #b60e24;
+  background-color: var(--primary-color)
 }
 
 h2 {
