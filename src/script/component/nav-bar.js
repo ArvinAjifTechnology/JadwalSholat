@@ -29,7 +29,7 @@ class Navbar extends HTMLElement {
           }
           
           nav a {
-            font-size: 29px;
+            font-size: 19px;
             font-weight: 400;
             text-decoration: none;
           

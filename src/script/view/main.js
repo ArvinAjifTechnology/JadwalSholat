@@ -1,5 +1,5 @@
 import '../component/app-header.js';
-import '../component/navbar.js';
+import '../component/nav-bar.js';
 import '../component/search-bar.js';
 import '../component/city-id.js';
 import '../component/search-prayer-schedule.js';
