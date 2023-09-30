@@ -1,7 +1,8 @@
+/* eslint-disable no-underscore-dangle */
 class SearchPrayerSchedule extends HTMLElement {
   constructor() {
     super();
-    this.shadowDOM = this.attachShadow({ mode: "open" });
+    this.shadowDOM = this.attachShadow({ mode: 'open' });
   }
 
   connectedCallback() {
@@ -15,8 +16,8 @@ class SearchPrayerSchedule extends HTMLElement {
 
   get value() {
     return {
-      cityId: this.shadowDOM.querySelector("#cityIdPrayerSchedule").value,
-      date: this.shadowDOM.querySelector("#datePrayerSchedule").value,
+      cityId: this.shadowDOM.querySelector('#cityIdPrayerSchedule').value,
+      date: this.shadowDOM.querySelector('#datePrayerSchedule').value,
     };
   }
 
@@ -101,9 +102,9 @@ class SearchPrayerSchedule extends HTMLElement {
           `;
 
     this.shadowDOM
-      .querySelector("#searchPrayerScheduleButtonElement")
-      .addEventListener("click", this._clickEvent);
+      .querySelector('#searchPrayerScheduleButtonElement')
+      .addEventListener('click', this._clickEvent);
   }
 }
 
-customElements.define("search-prayer-schedule", SearchPrayerSchedule);
+customElements.define('search-prayer-schedule', SearchPrayerSchedule);

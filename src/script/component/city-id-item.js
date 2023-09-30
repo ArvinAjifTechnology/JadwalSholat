@@ -1,7 +1,7 @@
 class CityIdItem extends HTMLElement {
   constructor() {
     super();
-    this.shadowDOM = this.attachShadow({ mode: "open" });
+    this.shadowDOM = this.attachShadow({ mode: 'open' });
   }
 
   set city(city) {
@@ -67,4 +67,4 @@ class CityIdItem extends HTMLElement {
   }
 }
 
-customElements.define("city-id-item", CityIdItem);
+customElements.define('city-id-item', CityIdItem);

@@ -1,11 +1,11 @@
 class PrayerSchedule extends HTMLElement {
   constructor() {
     super();
-    this.shadowDOM = this.attachShadow({ mode: "open" });
+    this.shadowDOM = this.attachShadow({ mode: 'open' });
   }
 
   set prayerSchedule(prayerSchedule) {
-    console.log("Cities:", typeof prayerSchedule);
+    // console.log('Cities:', typeof prayerSchedule);
     this._prayerSchedule = prayerSchedule;
     this.render();
   }
@@ -83,6 +83,7 @@ class PrayerSchedule extends HTMLElement {
     </div>
     `;
   }
+
   renderError(message) {
     this.shadowDOM.innerHTML = `
     <style>
@@ -100,4 +101,4 @@ class PrayerSchedule extends HTMLElement {
   }
 }
 
-customElements.define("prayer-schedule", PrayerSchedule);
+customElements.define('prayer-schedule', PrayerSchedule);

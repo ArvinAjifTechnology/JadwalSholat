@@ -1,8 +1,9 @@
 class AppHeader extends HTMLElement {
   constructor() {
     super();
-    this.shadowDOM = this.attachShadow({ mode: "open" });
+    this.shadowDOM = this.attachShadow({ mode: 'open' });
   }
+
   connectedCallback() {
     this.render();
   }
@@ -42,4 +43,4 @@ class AppHeader extends HTMLElement {
   }
 }
 
-customElements.define("app-header", AppHeader);
+customElements.define('app-header', AppHeader);
