@@ -17,6 +17,24 @@ class DataSource {
         return Promise.reject("Error during search");
       });
   }
+
+  static searchPrayerSchedule(cityID, year, month, date) {
+    return axios
+      .get(
+        `https://api.myquran.com/v1/sholat/jadwal/${cityID}/${year}/${month}/${date}`
+      )
+      .then((response) => {
+        if (response.data.jadwal) {
+          return Promise.resolve(response.data.jadwal);
+        } else {
+          return Promise.reject(`${keyword} is not found`);
+        }
+      })
+      .catch((error) => {
+        console.error("Error during search:", error);
+        return Promise.reject("Error during search");
+      });
+  }
 }
 
 export default DataSource;
