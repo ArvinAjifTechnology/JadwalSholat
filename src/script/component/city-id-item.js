@@ -12,10 +12,17 @@ class CityIdItem extends HTMLElement {
   render() {
     this.shadowDOM.innerHTML = `
             <style>
+            @font-face {
+              font-family: 'a Awal Ramadhan';
+              src: url('/src/fonts/aAwalRamadhan.ttf') format('otf');
+              font-weight: 600;
+              font-style: normal;
+            }
             * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'a Awal Ramadhan';
           }
           :host {
             display: block;

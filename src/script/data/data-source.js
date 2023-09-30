@@ -18,16 +18,16 @@ class DataSource {
       });
   }
 
-  static searchPrayerSchedule(cityID, year, month, date) {
+  static searchPrayerSchedule(cityID, year, month, day) {
     return axios
       .get(
-        `https://api.myquran.com/v1/sholat/jadwal/${cityID}/${year}/${month}/${date}`
+        `https://api.myquran.com/v1/sholat/jadwal/${cityID}/${year}/${month}/${day}`
       )
       .then((response) => {
-        if (response.data.jadwal) {
-          return Promise.resolve(response.data.jadwal);
+        if (response.data.data.jadwal) {
+          return Promise.resolve(response.data.data.jadwal);
         } else {
-          return Promise.reject(`${keyword} is not found`);
+          return Promise.reject(`Jadwal is not found`);
         }
       })
       .catch((error) => {

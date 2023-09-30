@@ -50,7 +50,7 @@ class Navbar extends HTMLElement {
         <nav>
             <ul>
                 <li><a href="#cari-id-kota">Cari ID Kota</a></li>
-                <li><a href="#jadwal-sholat">Jadwal Sholat</a></li>
+                <li><a href="#prayer-schedule">Jadwal Sholat</a></li>
                 <li><a href="#penggunaan">Penggunaan</a></li>
             </ul>
         </nav>
