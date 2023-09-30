@@ -14,11 +14,11 @@ class CityId extends HTMLElement {
 
   render() {
     this.shadowDOM.innerHTML = "";
-    // this._cities.forEach((city) => {
-    const cityIdItemElement = document.createElement("city-id-item");
-    cityIdItemElement.city = this._cities;
-    this.shadowDOM.appendChild(cityIdItemElement);
-    // });
+    this._cities.data.forEach((city) => {
+      const cityIdItemElement = document.createElement("city-id-item");
+      cityIdItemElement.city = city;
+      this.shadowDOM.appendChild(cityIdItemElement);
+    });
   }
   renderError(message) {
     this.shadowDOM.innerHTML = `
