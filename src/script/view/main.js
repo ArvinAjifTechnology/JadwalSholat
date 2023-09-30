@@ -7,7 +7,6 @@ import "../component/prayer-schedule.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import DataSource from "../data/data-source.js";
-import { async } from "regenerator-runtime";
 
 const main = () => {
   const searchElement = document.querySelector("search-bar");

@@ -32,6 +32,12 @@ class PrayerSchedule extends HTMLElement {
     border-radius: 10px;
     overflow: hidden;
   }
+  .fan-art-prayer-schedule {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+  }
   .prayer-schedule-info {
     padding: 24px;
     background-color: #FCE09B;

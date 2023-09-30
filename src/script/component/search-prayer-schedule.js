@@ -92,7 +92,7 @@ class SearchPrayerSchedule extends HTMLElement {
             }
             </style>
   
-            <h2>ID Kota</h2>
+            <h2>Jadwal Sholat</h2>
             <div id="search-container" class="search-container">
               <input placeholder="Cari Id Kota" id="cityIdPrayerSchedule" type="search">
               <input id="datePrayerSchedule" type="date">

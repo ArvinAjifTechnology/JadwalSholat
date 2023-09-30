@@ -32,6 +32,9 @@ class CityIdItem extends HTMLElement {
             border-radius: 10px;
             overflow: hidden;
           }
+          body{
+            background-color:#B0D9B1;
+          }
           .fan-art-city {
             width: 100%;
             max-height: 300px;
