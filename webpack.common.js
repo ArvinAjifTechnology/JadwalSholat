@@ -17,6 +17,17 @@ module.exports = {
         test: /\.(ttf|otf|eot|woff|woff2)$/,
         type: "asset/resource",
       },
+      {
+        test: /\.md$/,
+        use: [
+          {
+            loader: "html-loader",
+          },
+          {
+            loader: "markdown-loader",
+          },
+        ],
+      },
     ],
   },
   plugins: [
