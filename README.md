@@ -1,5 +1,5 @@
 # JadwalSholat
-- Selamat Datang Di Aplikasi Jadwal Sholat
+- Selamat Datang Di Aplikasi Jadwal Sholat aplikasi ini dibuat nmenggunakan javascript dengan [API](https://api.myquran.com/v1/sholat/jadwal/)
 ## Cara Penggunaan
 
 - Cari ID Kota
